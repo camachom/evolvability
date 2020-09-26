@@ -61,16 +61,13 @@ const replyMessage = async (req, res) => {
   const client = new Client()
   client.connect()
   try {
-    // // check if parent id exists
-    // const { rows } = await client.query("SELECT * FROM messages WHERE id = $1", [req.params.id])
-    // if (rows.length > 0) {
-    //   const newMessage = await client.query("INSERT INTO messages (message, parent_id) RETURNING *", [req.body.message, req.params.id])
-    //   res.send(newMessage.rows)
-    // } else {
-    //   res.send("Can't respond to a message that dosen't exist!")
-    // }
-
     const newMessage = await client.query("INSERT INTO messages (message, parent_id) VALUES ($1, $2) RETURNING *", [req.body.message, req.params.id])
+    if (req.query.replies) {
+      const { rows } = await client.query("SELECT * FROM messages WHERE parent_id = $1 OR id = $1", [req.params.id])
+      res.send([...newMessage.rows, ...rows])
+      return;
+    }
+
     res.send(newMessage.rows)
 
   } catch (error) {
