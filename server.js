@@ -1,4 +1,4 @@
-const { getMessages, postMessage } = require("./db")
+const { getMessages, postMessage, replyMessage } = require("./db")
 // server code
 const express = require("express")
 const bodyParser = require("body-parser")
@@ -21,6 +21,15 @@ app.post("/message", (req, res, next) => {
     console.log(error);
   }
 })
+
+app.post("/message/:id", (req, res, next) => {
+  try {
+    replyMessage(req, res);
+  } catch (error) {
+    console.log(error);
+  }
+})
+
 
 app.listen(3001, () => {
   console.log("listing on port 3001")
