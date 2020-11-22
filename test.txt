@@ -1,0 +1,456 @@
+Statistical profiling result from isolate-0x1042b6000-33423-v8.log, (2475 ticks, 3 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     13    0.5%          /usr/lib/system/libsystem_platform.dylib
+     11    0.4%          /usr/lib/system/libsystem_pthread.dylib
+      5    0.2%          /usr/lib/system/libsystem_kernel.dylib
+      4    0.2%          /usr/lib/system/libsystem_malloc.dylib
+      1    0.0%          /usr/lib/system/libsystem_m.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      4    0.2%    0.2%  LazyCompile: *handlePacket /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:93:17
+      4    0.2%    0.2%  LazyCompile: *cstring /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/buffer-reader.js:35:12
+      3    0.1%    0.1%  LazyCompile: *_addListener events.js:343:22
+      3    0.1%    0.1%  LazyCompile: *Readable.read _stream_readable.js:379:35
+      2    0.1%    0.1%  RegExp: ^((?:(?:[0-9a-fA-F]{1,4}):){7}(?:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){6}(?:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){5}(?::((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,2}|:)|(?:(?:[0-9a-fA-F]{1,4}):){4}(?:(:(?:[0-9a-fA-F]{1,4})){0,1}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,3}|:)|(?:(?:[0-9a-fA-F]{1,4}):){3}(?:(:(?:[0-9a-fA-F]{1,4})){0,2}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,4}|:)|(?:(?:[0-9a-fA-F]{1,4}):){2}(?:(:(?:[0-9a-fA-F]{1,4})){0,3}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,5}|:)|(?:(?:[0-9a-fA-F]{1,4}):){1}(?:(:(?:[0-9a-fA-F]{1,4})){0,4}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,6}|:)|(?::((?::(?:[0-9a-fA-F]{1,4})){0,5}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(?::(?:[0-9a-fA-F]{1,4})){1,7}|:)))(%[0-9a-zA-Z]{1,})?$
+      2    0.1%    0.1%  RegExp: (\d{1,})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})(\.\d{1,})?.*?( BC)?$
+      2    0.1%    0.1%  LazyCompile: *parse /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:28:10
+      1    0.0%    0.0%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      1    0.0%    0.0%  RegExp: ^-?infinity$
+      1    0.0%    0.0%  RegExp: ([Z+-])(\d{2})?:?(\d{2})?:?(\d{2})?
+      1    0.0%    0.0%  LazyCompile: *parseInteger /Users/martincamacho/Repos/evolvability/node_modules/pg-types/lib/textParsers.js:109:28
+      1    0.0%    0.0%  LazyCompile: *parseDataRowMessage /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:197:24
+      1    0.0%    0.0%  LazyCompile: *nextTick internal/process/task_queues.js:105:18
+      1    0.0%    0.0%  LazyCompile: *getEncodingOps buffer.js:674:24
+
+ [C++]:
+   ticks  total  nonlib   name
+   1450   58.6%   59.4%  T __kernelrpc_thread_policy_set
+    591   23.9%   24.2%  t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+     48    1.9%    2.0%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     27    1.1%    1.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     25    1.0%    1.0%  T void node::StreamBase::JSMethod<&(node::StreamBase::WriteBuffer(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     24    1.0%    1.0%  T node::TCPWrap::Connect(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    0.9%    0.9%  T ___ulock_wait
+     19    0.8%    0.8%  T _vm_copy
+     13    0.5%    0.5%  T __kernelrpc_mach_vm_purgable_control_trap
+      9    0.4%    0.4%  T void node::StreamBase::JSMethod<&(node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.3%    0.3%  t _small_malloc_should_clear
+      7    0.3%    0.3%  T __ZN4node6crypto4Hash10HashUpdateERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      6    0.2%    0.2%  T ___thread_selfid
+      5    0.2%    0.2%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.2%    0.2%  t ___vfprintf
+      4    0.2%    0.2%  t __ZN2v88internal12StringHasher20HashSequentialStringIhEEjPKT_iy
+      4    0.2%    0.2%  T _task_policy_set
+      3    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  t std::__1::__libcpp_unique_locale::~__libcpp_unique_locale()
+      3    0.1%    0.1%  t node::url::(anonymous namespace)::Parse(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  t node::cares_wrap::(anonymous namespace)::GetAddrInfo(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  t _free_small
+      3    0.1%    0.1%  t __platform_memmove$VARIANT$Haswell
+      3    0.1%    0.1%  t __ZN2v88internal12_GLOBAL__N_119HandleApiCallHelperILb0EEENS0_11MaybeHandleINS0_6ObjectEEEPNS0_7IsolateENS0_6HandleINS0_10HeapObjectEEESA_NS8_INS0_20FunctionTemplateInfoEEENS8_IS4_EENS0_16BuiltinArgumentsE
+      3    0.1%    0.1%  T void node::StreamBase::JSMethod<&(node::StreamBase::Shutdown(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  T node::TCPWrap::SetNoDelay(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  T ___sfp
+      3    0.1%    0.1%  T __ZN2v88Function4CallENS_5LocalINS_7ContextEEENS1_INS_5ValueEEEiPS5_
+      2    0.1%    0.1%  t std::__1::messages_byname<wchar_t>::~messages_byname()
+      2    0.1%    0.1%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t _tiny_malloc_should_clear
+      2    0.1%    0.1%  t _szone_realloc
+      2    0.1%    0.1%  t _szone_malloc_should_clear
+      2    0.1%    0.1%  t _small_malloc_from_free_list
+      2    0.1%    0.1%  t _rack_region_insert
+      2    0.1%    0.1%  t _nanov2_madvise_block
+      2    0.1%    0.1%  t _nanov2_find_block_and_allocate
+      2    0.1%    0.1%  t _free_tiny
+      2    0.1%    0.1%  t __cxxabiv1::__free_with_fallback(void*)
+      2    0.1%    0.1%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  T node::ConnectionWrap<node::TCPWrap, uv_tcp_s>::AfterConnect(uv_connect_s*, int)
+      2    0.1%    0.1%  T _read$NOCANCEL
+      2    0.1%    0.1%  T _proc_set_cpumon_params
+      2    0.1%    0.1%  T _kdebug_typefilter
+      2    0.1%    0.1%  T _fopen
+      2    0.1%    0.1%  T _fgetws
+      2    0.1%    0.1%  T ___sflags
+      2    0.1%    0.1%  T __ZN2v87Isolate10GetCurrentEv
+      2    0.1%    0.1%  T __ZN2v87Context5EnterEv
+      2    0.1%    0.1%  T __ZN2v86Object3SetENS_5LocalINS_7ContextEEEjNS1_INS_5ValueEEE
+      2    0.1%    0.1%  T __ZN2v85Array3NewEPNS_7IsolateEi
+      1    0.0%    0.0%  t void std::__1::vector<unsigned long long, std::__1::allocator<unsigned long long> >::__push_back_slow_path<unsigned long long const&>(unsigned long long const&)
+      1    0.0%    0.0%  t std::__1::messages_byname<char>::~messages_byname()
+      1    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      1    0.0%    0.0%  t std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >& std::__1::__input_arithmetic<unsigned long long, wchar_t, std::__1::char_traits<wchar_t> >(std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >&, unsigned long long&)
+      1    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      1    0.0%    0.0%  t non-virtual thunk to node::http2::Http2Stream::IsClosing()
+      1    0.0%    0.0%  t non-virtual thunk to node::http2::Http2Stream::HasWantsWrite() const
+      1    0.0%    0.0%  t node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::i18n::ToASCII(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::cares_wrap::(anonymous namespace)::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::LibuvStreamWrap::Initialize(v8::Local<v8::Object>, v8::Local<v8::Value>, v8::Local<v8::Context>, void*)::$_0::__invoke(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::EnvEnumerator(v8::PropertyCallbackInfo<v8::Array> const&)
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::CreateFromString(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::AsyncHooks::push_async_context(double, double, v8::Local<v8::Value>)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_value(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t _tiny_try_realloc_in_place
+      1    0.0%    0.0%  t _tiny_malloc_from_free_list
+      1    0.0%    0.0%  t _moreglue
+      1    0.0%    0.0%  t __cxxabiv1::__function_type_info::~__function_type_info()
+      1    0.0%    0.0%  t ___srefill1
+      1    0.0%    0.0%  t __ZN2v88internalL24Builtin_Impl_ArrayConcatENS0_16BuiltinArgumentsEPNS0_7IsolateE
+      1    0.0%    0.0%  t __ZN2v88internalL21Builtin_Impl_ArrayPopENS0_16BuiltinArgumentsEPNS0_7IsolateE
+      1    0.0%    0.0%  t __ZN2v88internal25FunctionCallbackArguments4CallENS0_15CallHandlerInfoE
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_119HandleApiCallHelperILb1EEENS0_11MaybeHandleINS0_6ObjectEEEPNS0_7IsolateENS0_6HandleINS0_10HeapObjectEEESA_NS8_INS0_20FunctionTemplateInfoEEENS8_IS4_EENS0_16BuiltinArgumentsE
+      1    0.0%    0.0%  t __ZN2v88internal11StringShape33DispatchToSpecificTypeWithoutCastIZNS1_22DispatchToSpecificTypeIZNS0_6String3GetEiE19StringGetDispatchertJRiEEET0_S4_DpOT1_E17CastingDispatchertJRS4_S6_EEES7_SA_
+      1    0.0%    0.0%  t __ZN2v84base19TemplateHashMapImplIPvS2_NS0_26HashEqualityThenKeyMatcherIS2_PFbS2_S2_EEENS0_23DefaultAllocationPolicyEE6ResizeES7_
+      1    0.0%    0.0%  t (anonymous namespace)::fallback_free(void*)
+      1    0.0%    0.0%  T std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >::get(std::__1::basic_streambuf<wchar_t, std::__1::char_traits<wchar_t> >&)
+      1    0.0%    0.0%  T node::TCPWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::StringBytes::Encode(v8::Isolate*, char const*, unsigned long, node::encoding, v8::Local<v8::Value>*)
+      1    0.0%    0.0%  T node::StreamBase::CallJSOnreadMethod(long, v8::Local<v8::ArrayBuffer>, unsigned long, node::StreamBase::StreamBaseJSChecks)
+      1    0.0%    0.0%  T node::LibuvStreamWrap::OnUvRead(long, uv_buf_t const*)
+      1    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      1    0.0%    0.0%  T node::DTRACE_NET_STREAM_END(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::BaseObject::MakeWeak()::'lambda'(v8::WeakCallbackInfo<node::BaseObject> const&)::__invoke(v8::WeakCallbackInfo<node::BaseObject> const&)
+      1    0.0%    0.0%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventDestroy()
+      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventBefore()
+      1    0.0%    0.0%  T _semaphore_create
+      1    0.0%    0.0%  T _rewind
+      1    0.0%    0.0%  T _mach_voucher_extract_attr_recipe
+      1    0.0%    0.0%  T ___ungetc
+      1    0.0%    0.0%  T ___pthread_init
+      1    0.0%    0.0%  T __ZNK2v85Value12IntegerValueENS_5LocalINS_7ContextEEE
+      1    0.0%    0.0%  T __ZNK2v85Value10IsFunctionEv
+      1    0.0%    0.0%  T __ZN4node6crypto4Hash3NewERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v88internal9Accessors23FunctionPrototypeGetterENS_5LocalINS_4NameEEERKNS_20PropertyCallbackInfoINS_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v88internal16DeclarationScopeC2EPNS0_4ZoneEPNS0_15AstValueFactoryE
+      1    0.0%    0.0%  T __ZN2v88internal15AstValueFactory9GetStringEjbNS0_6VectorIKhEE
+      1    0.0%    0.0%  T __ZN2v87Context29GetNumberOfEmbedderDataFieldsEv
+      1    0.0%    0.0%  T __ZN2v86Object3GetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v811HandleScopeD1Ev
+      1    0.0%    0.0%  T __ZN2v811HandleScope10InitializeEPNS_7IsolateE
+      1    0.0%    0.0%  T __ZN2v811ArrayBuffer3NewEPNS_7IsolateEPvmNS_23ArrayBufferCreationModeE
+
+ [Summary]:
+   ticks  total  nonlib   name
+     27    1.1%    1.1%  JavaScript
+   2411   97.4%   98.8%  C++
+     65    2.6%    2.7%  GC
+     34    1.4%          Shared libraries
+      3    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    605   75.2%   24.4%  t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+    190   23.6%    7.7%  T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+      3    0.4%    0.1%  t std::__1::__libcpp_unique_locale::~__libcpp_unique_locale()
+      2    0.2%    0.1%  t std::__1::messages_byname<wchar_t>::~messages_byname()
+      1    0.1%    0.0%  t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.0%  T node::StringBytes::Encode(v8::Isolate*, char const*, unsigned long, node::encoding, v8::Local<v8::Value>*)
+      1    0.1%    0.0%  T __ZNK2v85Value12IntegerValueENS_5LocalINS_7ContextEEE
+      1    0.1%    0.0%  T __ZN2v88internal19Builtin_ArrayConcatEiPmPNS0_7IsolateE
+      1    0.1%    0.0%  T __ZN2v88internal16Builtin_ArrayPopEiPmPNS0_7IsolateE
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1450   58.6%  T __kernelrpc_thread_policy_set
+
+    591   23.9%  t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+    162   27.4%    t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+     39   24.1%      t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+     10   25.6%        LazyCompile: *parseDate /Users/martincamacho/Repos/evolvability/node_modules/postgres-date/index.js:8:37
+      8   80.0%          LazyCompile: *handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/query.js:79:16
+      8  100.0%            LazyCompile: ~_handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:334:17
+      2   20.0%          LazyCompile: *_handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:334:17
+      2  100.0%            LazyCompile: *<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/connection.js:104:19
+      6   15.4%        LazyCompile: ~stringify /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:1118:20
+      6  100.0%          LazyCompile: ~json /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:239:25
+      6  100.0%            LazyCompile: ~send /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:107:25
+      4   10.3%        t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+      4  100.0%          LazyCompile: ~stringify /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:1118:20
+      4  100.0%            LazyCompile: ~json /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:239:25
+      3    7.7%        LazyCompile: ~parseInteger /Users/martincamacho/Repos/evolvability/node_modules/pg-types/lib/textParsers.js:109:28
+      3  100.0%          LazyCompile: *handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/query.js:79:16
+      3  100.0%            LazyCompile: ~_handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:334:17
+      2    5.1%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:241:21
+      1   50.0%          LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:275:26
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1156:37
+      1   50.0%          LazyCompile: ~readPackageMain internal/modules/cjs/loader.js:293:25
+      1  100.0%            LazyCompile: ~tryPackage internal/modules/cjs/loader.js:303:20
+      1    2.6%        LazyCompile: ~wrapConsole internal/util/inspector.js:35:21
+      1  100.0%          LazyCompile: ~createGlobalConsole internal/bootstrap/node.js:346:29
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    2.6%        LazyCompile: ~pathtoRegexp /Users/martincamacho/Repos/evolvability/node_modules/path-to-regexp/index.js:28:22
+      1  100.0%          LazyCompile: ~Layer /Users/martincamacho/Repos/evolvability/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%            LazyCompile: ~route /Users/martincamacho/Repos/evolvability/node_modules/express/lib/router/index.js:491:29
+      1    2.6%        LazyCompile: ~parseDate /Users/martincamacho/Repos/evolvability/node_modules/postgres-date/index.js:8:37
+      1  100.0%          LazyCompile: ~parseRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/result.js:62:11
+      1  100.0%            LazyCompile: ~handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/query.js:79:16
+      1    2.6%        LazyCompile: ~lookup /Users/martincamacho/Repos/evolvability/node_modules/mime/mime.js:102:19
+      1  100.0%          LazyCompile: ~header /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:754:29
+      1  100.0%            LazyCompile: ~json /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:239:25
+      1    2.6%        LazyCompile: ~isIPv4 internal/net.js:30:16
+      1  100.0%          LazyCompile: ~isIP internal/net.js:38:14
+      1  100.0%            LazyCompile: ~lookup dns.js:96:16
+      1    2.6%        LazyCompile: ~iconv._canonicalizeEncoding /Users/martincamacho/Repos/evolvability/node_modules/iconv-lite/lib/index.js:111:39
+      1  100.0%          LazyCompile: ~getCodec /Users/martincamacho/Repos/evolvability/node_modules/iconv-lite/lib/index.js:63:35
+      1  100.0%            LazyCompile: ~getDecoder /Users/martincamacho/Repos/evolvability/node_modules/iconv-lite/lib/index.js:126:39
+      1    2.6%        LazyCompile: ~getOwn internal/bootstrap/loaders.js:148:16
+      1  100.0%          LazyCompile: ~syncExports internal/bootstrap/loaders.js:251:14
+      1  100.0%            LazyCompile: ~<anonymous> internal/bootstrap/loaders.js:237:15
+      1    2.6%        LazyCompile: ~format /Users/martincamacho/Repos/evolvability/node_modules/media-typer/index.js:82:16
+      1  100.0%          LazyCompile: ~normalizeType /Users/martincamacho/Repos/evolvability/node_modules/type-is/index.js:237:24
+      1  100.0%            LazyCompile: ~tryNormalizeType /Users/martincamacho/Repos/evolvability/node_modules/type-is/index.js:256:27
+      1    2.6%        LazyCompile: ~format /Users/martincamacho/Repos/evolvability/node_modules/content-type/index.js:65:17
+      1  100.0%          LazyCompile: ~setCharset /Users/martincamacho/Repos/evolvability/node_modules/express/lib/utils.js:250:41
+      1  100.0%            LazyCompile: ~send /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:107:25
+      1    2.6%        LazyCompile: ~codeClass /Users/martincamacho/Repos/evolvability/node_modules/http-errors/index.js:37:20
+      1  100.0%          LazyCompile: ~forEachCode /Users/martincamacho/Repos/evolvability/node_modules/http-errors/index.js:243:38
+      1  100.0%            t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+      1    2.6%        LazyCompile: ~checkInvalidHeaderChar _http_common.js:221:32
+      1  100.0%          LazyCompile: ~<anonymous> _http_outgoing.js:523:45
+      1  100.0%            LazyCompile: ~setHeader _http_outgoing.js:533:57
+      1    2.6%        LazyCompile: ~Connection /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/connection.js:15:14
+      1  100.0%          LazyCompile: ~Client /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:16:14
+      1  100.0%            LazyCompile: ~replyMessage /Users/martincamacho/Repos/evolvability/db.js:60:22
+      1    2.6%        LazyCompile: ~<anonymous> internal/util/inspect.js:134:44
+      1  100.0%          t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+      1  100.0%            Eval: ~<anonymous> internal/util/inspect.js:1:1
+      1    2.6%        Eval: ~<anonymous> internal/net.js:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:296:29
+     27   16.7%      LazyCompile: *parseDate /Users/martincamacho/Repos/evolvability/node_modules/postgres-date/index.js:8:37
+     19   70.4%        LazyCompile: *handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/query.js:79:16
+     19  100.0%          LazyCompile: ~_handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:334:17
+     19  100.0%            LazyCompile: *<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/connection.js:104:19
+      5   18.5%        LazyCompile: *_handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:334:17
+      5  100.0%          LazyCompile: *<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/connection.js:104:19
+      5  100.0%            LazyCompile: *parse /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:28:10
+      3   11.1%        LazyCompile: *parseRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/result.js:62:11
+      3  100.0%          LazyCompile: ~handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/query.js:79:16
+      3  100.0%            LazyCompile: ~_handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:334:17
+     16    9.9%      LazyCompile: ~stringify /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:1118:20
+     16  100.0%        LazyCompile: ~json /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:239:25
+     16  100.0%          LazyCompile: ~send /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:107:25
+      9   56.3%            LazyCompile: ~getMessages /Users/martincamacho/Repos/evolvability/db.js:19:21
+      7   43.8%            LazyCompile: ~replyMessage /Users/martincamacho/Repos/evolvability/db.js:60:22
+      5    3.1%      LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:507:36
+      5  100.0%        t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+      5  100.0%          LazyCompile: ~query /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:487:8
+      4   80.0%            LazyCompile: ~postMessage /Users/martincamacho/Repos/evolvability/db.js:43:21
+      1   20.0%            LazyCompile: ~replyMessage /Users/martincamacho/Repos/evolvability/db.js:60:22
+      4    2.5%      LazyCompile: ~nextTick internal/process/task_queues.js:105:18
+      2   50.0%        LazyCompile: ~onwrite _stream_writable.js:409:17
+      2  100.0%          LazyCompile: ~afterWriteDispatched internal/stream_base_commons.js:149:30
+      2  100.0%            LazyCompile: ~writeGeneric internal/stream_base_commons.js:141:22
+      1   25.0%        LazyCompile: ~endReadable _stream_readable.js:1184:21
+      1  100.0%          LazyCompile: ~Readable.read _stream_readable.js:379:35
+      1  100.0%            LazyCompile: ~Socket.read net.js:619:33
+      1   25.0%        LazyCompile: ~emitReadable _stream_readable.js:543:22
+      1  100.0%          LazyCompile: ~onEofChunk _stream_readable.js:513:20
+      1  100.0%            LazyCompile: ~readableAddChunk _stream_readable.js:222:26
+      3    1.9%      LazyCompile: ~Module._extensions..json internal/modules/cjs/loader.js:1172:39
+      3  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:984:33
+      3  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:840:24
+      3  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:1028:36
+      3    1.9%      LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/index.js:8:23
+      3  100.0%        LazyCompile: *emit events.js:263:44
+      3  100.0%          LazyCompile: ~addChunk _stream_readable.js:288:18
+      3  100.0%            LazyCompile: ~readableAddChunk _stream_readable.js:222:26
+      2    1.2%      LazyCompile: ~startup /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/serializer.js:5:17
+      2  100.0%        LazyCompile: ~startup /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/connection.js:117:10
+      2  100.0%          LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:108:32
+      2  100.0%            LazyCompile: *emit events.js:263:44
+      2    1.2%      LazyCompile: ~realpathSync fs.js:1507:22
+      2  100.0%        LazyCompile: ~toRealPath internal/modules/cjs/loader.js:357:20
+      2  100.0%          LazyCompile: ~tryFile internal/modules/cjs/loader.js:349:17
+      1   50.0%            LazyCompile: ~tryPackage internal/modules/cjs/loader.js:303:20
+      1   50.0%            LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:364:23
+      2    1.2%      LazyCompile: ~readPackage internal/modules/cjs/loader.js:241:21
+      2  100.0%        LazyCompile: ~readPackageExports internal/modules/cjs/loader.js:298:28
+      2  100.0%          LazyCompile: ~applyExports internal/modules/cjs/loader.js:490:22
+      2  100.0%            LazyCompile: ~resolveExports internal/modules/cjs/loader.js:531:24
+      2    1.2%      LazyCompile: ~parse /Users/martincamacho/Repos/evolvability/node_modules/content-type/index.js:106:16
+      2  100.0%        LazyCompile: ~setCharset /Users/martincamacho/Repos/evolvability/node_modules/express/lib/utils.js:250:41
+      2  100.0%          LazyCompile: ~send /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:107:25
+      2  100.0%            LazyCompile: ~json /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:239:25
+      2    1.2%      LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:635:28
+      2  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:911:35
+      2  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:840:24
+      1   50.0%            LazyCompile: ~executeUserEntryPoint internal/modules/run_main.js:64:31
+      1   50.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:1028:36
+      2    1.2%      LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/connection.js:104:19
+      2  100.0%        LazyCompile: ~parse /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:28:10
+      2  100.0%          LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/index.js:8:23
+      2  100.0%            LazyCompile: ~addChunk _stream_readable.js:288:18
+     10    1.7%    LazyCompile: *handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/query.js:79:16
+     10  100.0%      LazyCompile: ~_handleDataRow /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:334:17
+     10  100.0%        LazyCompile: *<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/connection.js:104:19
+      8   80.0%          LazyCompile: *parse /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:28:10
+      8  100.0%            LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/index.js:8:23
+      2   20.0%          LazyCompile: ~parse /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:28:10
+      2  100.0%            LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/index.js:8:23
+      9    1.5%    LazyCompile: ~Connection /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/connection.js:15:14
+      9  100.0%      LazyCompile: ~Client /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:16:14
+      4   44.4%        LazyCompile: ~replyMessage /Users/martincamacho/Repos/evolvability/db.js:60:22
+      4  100.0%          LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/server.js:25:26
+      4  100.0%            LazyCompile: ~handle /Users/martincamacho/Repos/evolvability/node_modules/express/lib/router/layer.js:86:49
+      3   33.3%        LazyCompile: ~postMessage /Users/martincamacho/Repos/evolvability/db.js:43:21
+      3  100.0%          LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/server.js:17:22
+      3  100.0%            LazyCompile: ~handle /Users/martincamacho/Repos/evolvability/node_modules/express/lib/router/layer.js:86:49
+      2   22.2%        LazyCompile: ~getMessages /Users/martincamacho/Repos/evolvability/db.js:19:21
+      2  100.0%          LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/server.js:9:21
+      2  100.0%            LazyCompile: ~handle /Users/martincamacho/Repos/evolvability/node_modules/express/lib/router/layer.js:86:49
+      9    1.5%    LazyCompile: *handlePacket /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:93:17
+      6   66.7%      LazyCompile: *parse /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:28:10
+      6  100.0%        LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/index.js:8:23
+      6  100.0%          LazyCompile: *emit events.js:263:44
+      6  100.0%            LazyCompile: ~addChunk _stream_readable.js:288:18
+      3   33.3%      LazyCompile: ~parse /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/parser.js:28:10
+      3  100.0%        LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/index.js:8:23
+      3  100.0%          LazyCompile: *emit events.js:263:44
+      3  100.0%            LazyCompile: ~addChunk _stream_readable.js:288:18
+      8    1.4%    LazyCompile: ~onStreamRead internal/stream_base_commons.js:163:22
+      7    1.2%    LazyCompile: ~readableAddChunk _stream_readable.js:222:26
+      7  100.0%      LazyCompile: ~Readable.push _stream_readable.js:213:35
+      4   57.1%        LazyCompile: ~onStreamRead internal/stream_base_commons.js:163:22
+      2   28.6%        LazyCompile: ~parserOnBody _http_common.js:119:22
+      1   14.3%        LazyCompile: ~parserOnMessageComplete _http_common.js:135:33
+      7    1.2%    LazyCompile: ~onconnection net.js:1527:22
+      7    1.2%    LazyCompile: ~Socket._writeGeneric net.js:760:42
+      5   71.4%      LazyCompile: ~Socket._write net.js:797:35
+      5  100.0%        LazyCompile: ~doWrite _stream_writable.js:382:17
+      5  100.0%          LazyCompile: ~writeOrBuffer _stream_writable.js:349:23
+      5  100.0%            LazyCompile: ~Writable.write _stream_writable.js:271:36
+      2   28.6%      LazyCompile: ~Socket._writev net.js:792:36
+      2  100.0%        LazyCompile: ~doWrite _stream_writable.js:382:17
+      2  100.0%          LazyCompile: ~clearBuffer _stream_writable.js:500:21
+      2  100.0%            LazyCompile: ~Writable.uncork _stream_writable.js:322:37
+      6    1.0%    LazyCompile: ~send /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:107:25
+      5   83.3%      LazyCompile: ~json /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:239:25
+      5  100.0%        LazyCompile: ~send /Users/martincamacho/Repos/evolvability/node_modules/express/lib/response.js:107:25
+      3   60.0%          LazyCompile: ~postMessage /Users/martincamacho/Repos/evolvability/db.js:43:21
+      3  100.0%            t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+      2   40.0%          LazyCompile: ~getMessages /Users/martincamacho/Repos/evolvability/db.js:19:21
+      2  100.0%            t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+      1   16.7%      LazyCompile: ~postMessage /Users/martincamacho/Repos/evolvability/db.js:43:21
+      1  100.0%        t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+      1  100.0%          t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      6    1.0%    LazyCompile: ~nextTick internal/process/task_queues.js:105:18
+      2   33.3%      LazyCompile: ~onwrite _stream_writable.js:409:17
+      2  100.0%        LazyCompile: ~afterWriteDispatched internal/stream_base_commons.js:149:30
+      2  100.0%          LazyCompile: ~writeGeneric internal/stream_base_commons.js:141:22
+      2  100.0%            LazyCompile: ~Socket._writeGeneric net.js:760:42
+      1   16.7%      LazyCompile: ~resume _stream_readable.js:945:16
+      1  100.0%        LazyCompile: ~Readable.resume _stream_readable.js:931:37
+      1  100.0%          LazyCompile: ~Socket.resume net.js:610:35
+      1  100.0%            LazyCompile: ~parse /Users/martincamacho/Repos/evolvability/node_modules/pg-protocol/dist/index.js:6:15
+      1   16.7%      LazyCompile: ~maybeReadMore _stream_readable.js:582:23
+      1  100.0%        LazyCompile: ~addChunk _stream_readable.js:288:18
+      1  100.0%          LazyCompile: ~readableAddChunk _stream_readable.js:222:26
+      1  100.0%            LazyCompile: ~Readable.push _stream_readable.js:213:35
+      1   16.7%      LazyCompile: ~endReadable _stream_readable.js:1184:21
+      1  100.0%        LazyCompile: ~Readable.read _stream_readable.js:379:35
+      1  100.0%          LazyCompile: ~Socket.read net.js:619:33
+      1  100.0%            LazyCompile: ~flow _stream_readable.js:976:14
+      1   16.7%      LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/client.js:122:21
+      1  100.0%        LazyCompile: ~onceWrapper events.js:416:21
+      1  100.0%          LazyCompile: *emit events.js:263:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/pg/lib/connection.js:101:22
+
+     48    1.9%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     48  100.0%    T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+     48  100.0%      LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+     47   97.9%        LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:296:29
+      4    8.5%          Eval: ~<anonymous> stream.js:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      4    8.5%          Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      4    8.5%          Eval: ~<anonymous> crypto.js:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      3    6.4%          LazyCompile: ~initializeCJSLoader internal/bootstrap/pre_execution.js:408:29
+      3  100.0%            LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:14:36
+      2    4.3%          LazyCompile: ~setupPrepareStackTrace internal/bootstrap/node.js:251:32
+      2  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      2    4.3%          Eval: ~<anonymous> internal/url.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      2    4.3%          Eval: ~<anonymous> internal/source_map/source_map_cache.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      2    4.3%          Eval: ~<anonymous> internal/process/esm_loader.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      2    4.3%          Eval: ~<anonymous> http.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      2    4.3%          Eval: ~<anonymous> events.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      2    4.3%          Eval: ~<anonymous> _http_client.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          LazyCompile: ~setupInspectorHooks internal/bootstrap/pre_execution.js:219:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:14:36
+      1    2.1%          LazyCompile: ~setupBuffer internal/bootstrap/node.js:329:21
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    2.1%          LazyCompile: ~lazyLoadStreams fs.js:1852:25
+      1  100.0%            LazyCompile: ~get ReadStream fs.js:1953:17
+      1    2.1%          LazyCompile: ~get dns.js:328:8
+      1  100.0%            t __ZN2v88internalL41Builtin_Impl_Stats_ArrayBufferConstructorEiPmPNS0_7IsolateE
+      1    2.1%          LazyCompile: ~createWritableStdioStream internal/bootstrap/switches/is_main_thread.js:37:35
+      1  100.0%            LazyCompile: ~getStderr internal/bootstrap/switches/is_main_thread.js:127:19
+      1    2.1%          Eval: ~<anonymous> tty.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> internal/timers.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> internal/modules/esm/loader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> internal/modules/cjs/loader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> internal/modules/cjs/helpers.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    2.1%          Eval: ~<anonymous> internal/fs/promises.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> internal/cluster/round_robin_handle.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> internal/cluster/master.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> internal/child_process.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> fs.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> buffer.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%          Eval: ~<anonymous> assert.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    2.1%        LazyCompile: ~compileForPublicLoader internal/bootstrap/loaders.js:212:25
+      1  100.0%          LazyCompile: ~loadNativeModule internal/modules/cjs/helpers.js:20:26
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:840:24
+
+     27    1.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     27  100.0%    T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+     26   96.3%      LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:1048:18
+     26  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1101:37
+     26  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1156:37
+     26  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:984:33
+      1    3.7%      Eval: ~<anonymous> /Users/martincamacho/Repos/evolvability/node_modules/iconv-lite/encodings/index.js:1:1
+      1  100.0%        LazyCompile: ~getCodec /Users/martincamacho/Repos/evolvability/node_modules/iconv-lite/lib/index.js:63:35
+      1  100.0%          LazyCompile: ~getDecoder /Users/martincamacho/Repos/evolvability/node_modules/iconv-lite/lib/index.js:126:39
+      1  100.0%            LazyCompile: ~getDecoder /Users/martincamacho/Repos/evolvability/node_modules/raw-body/index.js:41:21
+
+     25    1.0%  T void node::StreamBase::JSMethod<&(node::StreamBase::WriteBuffer(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     25  100.0%    T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+     25  100.0%      LazyCompile: ~handleWriteReq internal/stream_base_commons.js:45:24
+     25  100.0%        LazyCompile: ~writeGeneric internal/stream_base_commons.js:141:22
+     25  100.0%          LazyCompile: ~Socket._writeGeneric net.js:760:42
+     25  100.0%            LazyCompile: ~Socket._write net.js:797:35
+

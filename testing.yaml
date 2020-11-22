@@ -1,0 +1,19 @@
+config:
+  target: "http://localhost:3001"
+  phases:
+    - duration: 10
+      arrivalRate: 10
+scenarios:
+  - flow:
+    - get:
+        url: "/message"
+    - post:
+        url: "/message"
+        json:
+          message: "this is an automated test"
+    - post:
+        url: "/message/1"
+        qs:
+          replies: true
+        json:
+          message: "an automated reply"
